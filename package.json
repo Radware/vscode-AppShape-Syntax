@@ -1,0 +1,35 @@
+{
+    "name": "vsc-appshape-extension",
+    "displayName": "vsc_appshape_extension",
+    "description": "A VSC extension to support AppShape++ scripting",
+    "publisher": "0",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "snippets" : [{
+            "language": "appshape",
+            "path": "./vscode_snippet.json"
+        }],
+        "languages": [{
+            "id": "appshape",
+            "aliases": ["AppShape++"],
+            "extensions": [".tcl", ".appshape"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "appshape",
+            "scopeName": "source.appshape",
+            "path": "./syntaxes/appshape.tmLanguage.json"
+        }],
+        "theme":[{
+            "language": "appshape",
+            "scopeName": "source.appshape",
+            "path": "./syntaxes/appshape.tmTheme.json"
+        }]
+    }
+}

@@ -1,0 +1,609 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "appshape",
+	"patterns": [
+		{
+			"include": "#commands"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"commands": {
+			"patterns": [
+				{
+				"name": "keyword.name.event.appshape",
+				"match": "^(when) ((?:CLIENT_ACCEPTED)|(?:CLIENTSSL_CLIENTCERT)|(?:DNS_REQUEST)|(?:DNS_RESPONSE)|(?:DNS_VALIDATION_FAILED)|(?:HTTP_FILTER_MATCH)|(?:HTTP_CRULE_MATCH)|(?:HTTP_CLASS_SELECTED)|(?:HTTP_REQUEST)|(?:HTTP_REQUEST_DATA)|(?:HTTP_RESPONSE)|(?:HTTP_RESPONSE_DATA)|(?:ICAP_REQUEST)|(?:ICAP_RESPONSE)|(?:LB_SELECTED)|(?:NAME_RESOLVED)|(?:PERSIST_DOWN)|(?:RTSP_REQUEST)|(?:RTSP_REQUEST_DATA)|(?:RTSP_RESPONSE)|(?:RTSP_RESPONSE_DATA)|(?:INIT)|(?:RULE_INIT)|(?:SERVER_CONNECTED)|(?:SIP_RESPONSE)|(?:SSL_FILTER_MATCH)) {"
+				},
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::extensions)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::hash)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::issuer)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::not_valid_after)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::not_valid_before)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::serial_number)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::signature_algorithm)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::subject)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::subject_public_key)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::subject_public_key_RSA_bits)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::subject_public_key_type)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::verify_cert_error_string)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::version)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(X509::whole)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(COMPRESS::disable)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(COMPRESS::enable)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::additional) ((?:insert)|(?:remove)|(?:clear))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::answer) ((?:insert)|(?:remove)|(?:clear))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::authority) ((?:insert)|(?:remove)|(?:clear))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::class)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::discard)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::edns0) ((?:exists)|(?:subnet))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::header)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::len)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::name)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::ptype)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::question)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::rdata)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::return)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::rr)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::search)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::ttl)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(DNS::type)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(b64decode)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(b64encode)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(class) ((?:exists)|(?:type)|(?:size)|(?:match)|(?:search)|(?:startsearch)|(?:nextelement)|(?:anymore)|(?:class apmlist <data class id>))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(event) ((?:name)|(?:disable_current)|(?:disable)|(?:enable)|(?:disable_all)|(?:enable_all))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(filter) ((?:name)|(?:id)|(?:skip))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(group) ((?:select)|(?:count)|(?:list))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(host)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(log)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(md5)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(persist) ((?:usid)|(?:cookie)|(?:source_addr)|(?:dest_addr)|(?:hash)|(?:none)|(?:add)|(?:lookup)|(?:delete)|(?:timeout))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(serverside)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(service) ((?:name)|(?:ip)|(?:port))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(snat) ((?:nwclass))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(substr)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(table) ((?:add)|(?:append)|(?:count)|(?:delete)|(?:increment)|(?:keys)|(?:lookup)|(?:replace)|(?:set)|(?:timeout))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(whereis)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::bypass_proxy)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::close)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::collect)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::cookie) ((?:count)|(?:names)|(?:value)|(?:domain)|(?:path)|(?:version)|(?:ports)|(?:expires)|(?:maxage)|(?:comment)|(?:commenturl)|(?:secure)|(?:httponly)|(?:exists)|(?:insert)|(?:remove)|(?:set))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::crule) ((?:enable)|(?:disable)|(?:select))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::disable)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::extension)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::header) ((?:count)|(?:names)|(?:value)|(?:values)|(?:exists)|(?:at)|(?:insert)|(?:replace)|(?:remove)|(?:is_redirect)|(?:is_keepalive))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::host)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::method)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::password)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::path)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::payload) ((?:length)|(?:find)|(?:find_all)|(?:replace)|(?:clear)|(?:rechunk)|(?:unchunk))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::query)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::redirect)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::release)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::request)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::req_count)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::respond)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::retry)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::status)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::uri)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::username)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(HTTP::version)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(ICAP::method)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(ICAP::status)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::addr) ((?:parse))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::client_addr)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::local_addr)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::protocol)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::remote_addr)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::server_addr)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::tos) ((?:get)|(?:set))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(IP::version)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(LB::reselect)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(LB::status)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(Operator::contains)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(Operator::ends_with)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(Operator::equals)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(Operator::starts_with)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(RADIUS::auth) ((?:recalc))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(RADIUS::avp) ((?:delete)|(?:insert)|(?:replace)|(?:clear_all))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(RADIUS::code)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(RADIUS::id)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(RADIUS::length)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::call_id)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::discard)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::from)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::header) ((?:insert)|(?:remove)|(?:replace))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::method)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::payload)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::respond)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::response) ((?:code)|(?:phrase)|(?:rewrite))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::to)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::uri)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SIP::via) ((?:proto)|(?:sent_by)|(?:received)|(?:branch)|(?:maddr)|(?:ttl))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(Special::attach) ((?:group)|(?:snat))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::cert) ((?:issuer)|(?:count))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::cipher) ((?:name)|(?:version)|(?:bits))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::disable)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::enable)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::mode)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::reject)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::sessionid)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::verify_result)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(SSL::version)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::client_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::close) ((?:none)|(?:reset)|(?:silent)|(?:twoway))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::close_type)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::collect)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::detach)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::local_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::option) ((?:get)|(?:set))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::payload) ((?:none)|(?:replace)|(?:length)|(?:find)|(?:find_all)|(?:clear))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::release)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::remote_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::respond)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(TCP::server_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::client_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::drop)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::local_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::payload) ((?:none)|(?:replace)|(?:length)|(?:find)|(?:find_all)|(?:clear))"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::remote_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::respond)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::server_port)"
+                },
+                {
+                "name": "command.classcommand.appshape",
+                "match": "(UDP::unused_port)"
+                }
+			]
+			},
+		"comments": {
+			"patterns": [
+				{
+				"name": "comment.line.double-dash.appshape",
+				"begin": "#",
+				"end": "\n"
+
+				}
+			]
+		},
+		"strings":{
+			"patterns": [
+				{
+				"name":"string.quoted.single.appshape",
+				"begin": "'",
+				"end": "'"
+				},
+				{
+				"name":"string.quoted.double.appshape",
+				"begin": "\"",
+				"end": "\""
+				}
+			]
+		},
+		"variables":{
+			"patterns": [
+				{
+				"name": "variable.language.appshape"	,
+				"match": "(\\$[^\\s]+)|((?:set) ([^\\s]+) ([^\n]+))"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+			]
+		}
+
+	},
+	"scopeName": "source.appshape"
+}

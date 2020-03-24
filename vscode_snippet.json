@@ -1,0 +1,823 @@
+{
+    "when CLIENT_ACCEPTED": {
+        "prefix": ["when CLIENT_ACCEPTED"],
+        "body": ["when CLIENT_ACCEPTED {\n${1:   }\n}"],
+        "description": "when CLIENT_ACCEPTED"
+    },
+    "when CLIENTSSL_CLIENTCERT": {
+        "prefix": ["when CLIENTSSL_CLIENTCERT"],
+        "body": ["when CLIENTSSL_CLIENTCERT {\n${1:   }\n}"],
+        "description": "when CLIENTSSL_CLIENTCERT"
+    },
+    "when DNS_REQUEST": {
+        "prefix": ["when DNS_REQUEST"],
+        "body": ["when DNS_REQUEST {\n${1:   }\n}"],
+        "description": "when DNS_REQUEST"
+    },
+    "when DNS_RESPONSE": {
+        "prefix": ["when DNS_RESPONSE"],
+        "body": ["when DNS_RESPONSE {\n${1:   }\n}"],
+        "description": "when DNS_RESPONSE"
+    },
+    "when DNS_VALIDATION_FAILED": {
+        "prefix": ["when DNS_VALIDATION_FAILED"],
+        "body": ["when DNS_VALIDATION_FAILED {\n${1:   }\n}"],
+        "description": "when DNS_VALIDATION_FAILED"
+    },
+    "when HTTP_FILTER_MATCH": {
+        "prefix": ["when HTTP_FILTER_MATCH"],
+        "body": ["when HTTP_FILTER_MATCH {\n${1:   }\n}"],
+        "description": "when HTTP_FILTER_MATCH"
+    },
+    "when HTTP_CRULE_MATCH": {
+        "prefix": ["when HTTP_CRULE_MATCH"],
+        "body": ["when HTTP_CRULE_MATCH {\n${1:   }\n}"],
+        "description": "when HTTP_CRULE_MATCH"
+    },
+    "when HTTP_CLASS_SELECTED": {
+        "prefix": ["when HTTP_CLASS_SELECTED"],
+        "body": ["when HTTP_CLASS_SELECTED {\n${1:   }\n}"],
+        "description": "when HTTP_CLASS_SELECTED"
+    },
+    "when HTTP_REQUEST": {
+        "prefix": ["when HTTP_REQUEST"],
+        "body": ["when HTTP_REQUEST {\n${1:   }\n}"],
+        "description": "when HTTP_REQUEST"
+    },
+    "when HTTP_REQUEST_DATA": {
+        "prefix": ["when HTTP_REQUEST_DATA"],
+        "body": ["when HTTP_REQUEST_DATA {\n${1:   }\n}"],
+        "description": "when HTTP_REQUEST_DATA"
+    },
+    "when HTTP_RESPONSE": {
+        "prefix": ["when HTTP_RESPONSE"],
+        "body": ["when HTTP_RESPONSE {\n${1:   }\n}"],
+        "description": "when HTTP_RESPONSE"
+    },
+    "when HTTP_RESPONSE_DATA": {
+        "prefix": ["when HTTP_RESPONSE_DATA"],
+        "body": ["when HTTP_RESPONSE_DATA {\n${1:   }\n}"],
+        "description": "when HTTP_RESPONSE_DATA"
+    },
+    "when ICAP_REQUEST": {
+        "prefix": ["when ICAP_REQUEST"],
+        "body": ["when ICAP_REQUEST {\n${1:   }\n}"],
+        "description": "when ICAP_REQUEST"
+    },
+    "when ICAP_RESPONSE": {
+        "prefix": ["when ICAP_RESPONSE"],
+        "body": ["when ICAP_RESPONSE {\n${1:   }\n}"],
+        "description": "when ICAP_RESPONSE"
+    },
+    "when LB_SELECTED": {
+        "prefix": ["when LB_SELECTED"],
+        "body": ["when LB_SELECTED {\n${1:   }\n}"],
+        "description": "when LB_SELECTED"
+    },
+    "when NAME_RESOLVED": {
+        "prefix": ["when NAME_RESOLVED"],
+        "body": ["when NAME_RESOLVED {\n${1:   }\n}"],
+        "description": "when NAME_RESOLVED"
+    },
+    "when PERSIST_DOWN": {
+        "prefix": ["when PERSIST_DOWN"],
+        "body": ["when PERSIST_DOWN {\n${1:   }\n}"],
+        "description": "when PERSIST_DOWN"
+    },
+    "when RTSP_REQUEST": {
+        "prefix": ["when RTSP_REQUEST"],
+        "body": ["when RTSP_REQUEST {\n${1:   }\n}"],
+        "description": "when RTSP_REQUEST"
+    },
+    "when RTSP_REQUEST_DATA": {
+        "prefix": ["when RTSP_REQUEST_DATA"],
+        "body": ["when RTSP_REQUEST_DATA {\n${1:   }\n}"],
+        "description": "when RTSP_REQUEST_DATA"
+    },
+    "when RTSP_RESPONSE": {
+        "prefix": ["when RTSP_RESPONSE"],
+        "body": ["when RTSP_RESPONSE {\n${1:   }\n}"],
+        "description": "when RTSP_RESPONSE"
+    },
+    "when RTSP_RESPONSE_DATA": {
+        "prefix": ["when RTSP_RESPONSE_DATA"],
+        "body": ["when RTSP_RESPONSE_DATA {\n${1:   }\n}"],
+        "description": "when RTSP_RESPONSE_DATA"
+    },
+    "when INIT": {
+        "prefix": ["when INIT"],
+        "body": ["when INIT {\n${1:   }\n}"],
+        "description": "when INIT"
+    },
+    "when RULE_INIT": {
+        "prefix": ["when RULE_INIT"],
+        "body": ["when RULE_INIT {\n${1:   }\n}"],
+        "description": "when RULE_INIT"
+    },
+    "when SERVER_CONNECTED": {
+        "prefix": ["when SERVER_CONNECTED"],
+        "body": ["when SERVER_CONNECTED {\n${1:   }\n}"],
+        "description": "when SERVER_CONNECTED"
+    },
+    "when SIP_RESPONSE": {
+        "prefix": ["when SIP_RESPONSE"],
+        "body": ["when SIP_RESPONSE {\n${1:   }\n}"],
+        "description": "when SIP_RESPONSE"
+    },
+    "when SSL_FILTER_MATCH)) ": {
+        "prefix": ["when SSL_FILTER_MATCH)) "],
+        "body": ["when SSL_FILTER_MATCH))  {\n${1:   }\n}"],
+        "description": "when SSL_FILTER_MATCH)) "
+    },
+    "DNS::additional insert": {
+        "prefix": ["DNS::additional insert"],
+        "body": ["DNS::additional insert <rr>"],
+        "description": "Insert a resource record in the Additional section."
+    },
+    "DNS::additional remove": {
+        "prefix": ["DNS::additional remove"],
+        "body": ["DNS::additional remove <rr>"],
+        "description": "Removes the specified resource record from the Additional section."
+    },
+    "DNS::additional clear": {
+        "prefix": ["DNS::additional clear"],
+        "body": ["DNS::additional clear"],
+        "description": "Clears all resource records in the Additional section."
+    },
+    "DNS::answer insert": {
+        "prefix": ["DNS::answer insert"],
+        "body": ["DNS::answer insert <rr>"],
+        "description": "Insert a resource record in the answer section."
+    },
+    "DNS::answer remove": {
+        "prefix": ["DNS::answer remove"],
+        "body": ["DNS::answer remove <rr>"],
+        "description": "Removes the specified resource record from the answer section."
+    },
+    "DNS::answer clear": {
+        "prefix": ["DNS::answer clear"],
+        "body": ["DNS::answer clear"],
+        "description": "Clears all resource records in the answer section."
+    },
+    "DNS::authority insert": {
+        "prefix": ["DNS::authority insert"],
+        "body": ["DNS::authority insert <rr>"],
+        "description": "Insert a resource record in the Authority section."
+    },
+    "DNS::authority remove": {
+        "prefix": ["DNS::authority remove"],
+        "body": ["DNS::authority remove <rr>"],
+        "description": "Removes the specified resource record from the Authority section."
+    },
+    "DNS::authority clear": {
+        "prefix": ["DNS::authority clear"],
+        "body": ["DNS::authority clear"],
+        "description": "Clears all resource records in the answer Authority section."
+    },
+    "DNS::edns0 exists": {
+        "prefix": ["DNS::edns0 exists"],
+        "body": ["DNS::edns0 exists [<nsid|subnet>]"],
+        "description": "Checks whether the EDNS0 pseudo-RR exists or if the NSID optionexists in EDNS0 or if the client-subnet option exists inEDNS0"
+    },
+    "DNS::edns0 subnet": {
+        "prefix": ["DNS::edns0 subnet"],
+        "body": ["DNS::edns0 subnet <address|source|scope> [<IP|int|int>]"],
+        "description": "Retrieves or changes client subnet parameters."
+    },
+    "class exists": {
+        "prefix": ["class exists"],
+        "body": ["class exists <data class id>"],
+        "description": "Checks whether the specified data class exists"
+    },
+    "class type": {
+        "prefix": ["class type"],
+        "body": ["class type <data class id>"],
+        "description": "Retrieves the type of data in the specified data class. The supported types are integer, string and IP address."
+    },
+    "class size": {
+        "prefix": ["class size"],
+        "body": ["class size <data class id>"],
+        "description": "Retrieves the number of entries in the specified data class.."
+    },
+    "class match": {
+        "prefix": ["class match"],
+        "body": ["class match [<options>] <argument> <operator> <data class id>"],
+        "description": "Checks whether an argument matches one of the names in the specified data class. The matching criteria is defined by the operator used, and the output is determined by the option used."
+    },
+    "class search": {
+        "prefix": ["class search"],
+        "body": ["class search [<options>] <data class id> <operator> <argument>"],
+        "description": "Checks whether anyof the names in the specified data classmatches the argument. The matching criteria is defined by the operator used, and the output is determined by the option used."
+    },
+    "class startsearch": {
+        "prefix": ["class startsearch"],
+        "body": ["classstartsearch <data class id>"],
+        "description": "Initializes the index for iterative search of the specified data class"
+    },
+    "class nextelement": {
+        "prefix": ["class nextelement"],
+        "body": ["class nextelement [<options>] <data class id>"],
+        "description": "Retrieves the next element in the specified data class."
+    },
+    "class anymore": {
+        "prefix": ["class anymore"],
+        "body": ["class anymore <data class id>"],
+        "description": "Checks whether there are anymore elements in the data class when performing an iterative search"
+    },
+    "class class apmlist <data class id>": {
+        "prefix": ["class class apmlist <data class id>"],
+        "body": ["class apmlist [<-regex>] <data class id>"],
+        "description": "Globaly set data class as APM exclusion list. The data class should contain value pairs of <URL, \"0\"|\"1\">. Value \"0\" is for APM exclusion. Value \"1\" will set alternate inserion point for APM."
+    },
+    "event name": {
+        "prefix": ["event name"],
+        "body": ["event name"],
+        "description": "Return name of current event"
+    },
+    "event disable_current": {
+        "prefix": ["event disable_current"],
+        "body": ["event disable_current"],
+        "description": "Stops execution of current event afterth event codesection is finished, i.e., skips execution of following scripts for the current event. Does not affect next execution of this type of event on this connection."
+    },
+    "event disable": {
+        "prefix": ["event disable"],
+        "body": ["event disable<event name>+"],
+        "description": "Disables execution of specified event typesfor the rest of the connection (unless re-enabled)."
+    },
+    "event enable": {
+        "prefix": ["event enable"],
+        "body": ["event enable <event name>+"],
+        "description": "Re-enables execution of specified event types."
+    },
+    "event disable_all": {
+        "prefix": ["event disable_all"],
+        "body": ["event disable_all"],
+        "description": "Disables execution of all AppShape++ events for the rest of the connection (unless re-enabled)."
+    },
+    "event enable_all": {
+        "prefix": ["event enable_all"],
+        "body": ["event enable_all"],
+        "description": "Re-enables execution of all AppShape++ events that were disabled previously on this connection."
+    },
+    "filter name": {
+        "prefix": ["filter name"],
+        "body": ["filter name"],
+        "description": "Returns name of the currently matched filter as defined in the configuration. If no name is configured an empty string is returned. Empty string is returned also if no selection was made yet."
+    },
+    "filter id": {
+        "prefix": ["filter id"],
+        "body": ["filter id"],
+        "description": "Returnsthe id of the currently matched filter, empty string if no selection yet."
+    },
+    "filter skip": {
+        "prefix": ["filter skip"],
+        "body": ["filter skip"],
+        "description": "Ignores the currently matched filter and continues to look for filter matching the connection."
+    },
+    "group select": {
+        "prefix": ["group select"],
+        "body": ["group select <group ID> [all | server <server ID | IP> [<port>]]"],
+        "description": "Selects specified group and, optionally, specific real server belonging to the group to forward current session. In order to be able to select a group for a virtual service, that group must be declared as active for that service, either via configuration or rule declaration. The option all allows to broadcast the same request to all the servers in the group. This option is available only in virtual service and only for UDP traffic."
+    },
+    "group count": {
+        "prefix": ["group count"],
+        "body": ["group count all_servers | active_servers | local_servers <group ID>"],
+        "description": "Retrieves the number of configured serveror active servers or active local servers in the specified group."
+    },
+    "group list": {
+        "prefix": ["group list"],
+        "body": ["group list all_servers | active_servers <group ID>"],
+        "description": "Retrieves all the servers configured or active for the specified group, in TCL list format."
+    },
+    "persist usid": {
+        "prefix": ["persist usid"],
+        "body": ["persist usid <session id> [any virtual | any service | any group | group <group>}] [<timeout>]"],
+        "description": "Persist according to user-defined session ID."
+    },
+    "persist cookie": {
+        "prefix": ["persist cookie"],
+        "body": ["persist cookie insert <cookie name>[expires <expires> [absolute | relative] ] [path <path>] [domain <domain>][secure <enable | disable>][httponly<enable | disable>][any virtual | any service | any group | group <group>][timeout <timeout>] persist cookie rewrite <cookie name>[expires <expires> [absolute | relative] ] [path <path>] [domain <domain>][secure <enable | disable>][httponly<enable | disable>][any virtual | any service | any group | group <group>] [timeout <timeout>] persist cookie passive <cookie name>[{<offset>[<length>]}] [any virtual | any service | any group | group <group>] [timeout <timeout>]"],
+        "description": "Persist HTTP requests according to specified cookie value, using either cookie insert, cookie rewrite or passive cookie mechanism."
+    },
+    "persist source_addr": {
+        "prefix": ["persist source_addr"],
+        "body": ["persist source_addr <IPv4 mask> | <IPv6 prefix> [any virtual | any service | any group | group <group>] [<timeout>]"],
+        "description": "Persist on source IP address."
+    },
+    "persist dest_addr": {
+        "prefix": ["persist dest_addr"],
+        "body": ["persist dest_addr <IPv4 mask> | <IPv6 prefix> [any virtual | any service | any group | group <group>] [<timeout>]"],
+        "description": "Persist on destination IP address"
+    },
+    "persist hash": {
+        "prefix": ["persist hash"],
+        "body": ["persist hash <session id> [any virtual | any service | any group | group <group>] [<timeout>]"],
+        "description": "Persist by performing hash on the specified session id string"
+    },
+    "persist none": {
+        "prefix": ["persist none"],
+        "body": ["persist none"],
+        "description": "Disables persistency for the current connection."
+    },
+    "persist add": {
+        "prefix": ["persist add"],
+        "body": ["persist add <mode> <value> | {<value> any virtual | any service | any group | group <group>}] [-o [-gid <group id>] [-pr <port1,port2-port3>] ] [<timeout>]"],
+        "description": "Adds a new persistency entry with the specified parameters and the currently selected server. Valid in servers side events."
+    },
+    "persist lookup": {
+        "prefix": ["persist lookup"],
+        "body": ["persist lookup <mode> <value> | {<value> any virtual | any service | any group | group <group>}] [all | server | port | group]"],
+        "description": "Searches for the specified session entry and returnsselected server."
+    },
+    "persist delete": {
+        "prefix": ["persist delete"],
+        "body": ["persist delete <mode> <value> | {<value> any virtual | any service | any group | group <group>}]"],
+        "description": "Deletes the specified persistency entry"
+    },
+    "persist timeout": {
+        "prefix": ["persist timeout"],
+        "body": ["persist timeout [-notouch] <mode> <value> [any virtual | any service | any group | group <group>] <timeout>"],
+        "description": "Updatestimeout ofspecified persistency entry"
+    },
+    "service name": {
+        "prefix": ["service name"],
+        "body": ["service name"],
+        "description": "Return name of current virtual service as defined in the configuration. If no name is configured an empty string is returned."
+    },
+    "service ip": {
+        "prefix": ["service ip"],
+        "body": ["service ip"],
+        "description": "Returnthe IP of current virtual service (VIP), in string format."
+    },
+    "service port": {
+        "prefix": ["service port"],
+        "body": ["service port"],
+        "description": "Return service port of current virtual service."
+    },
+    "snat nwclass": {
+        "prefix": ["snat nwclass"],
+        "description": "Performs source network address translation (NAT) using all addresses from the specified Network Class or a specific address from the Network Class. It is also possible to ensure that NAT is performed in persistent manner (a certain client IP is always translated using the same address from the network class)"
+    },
+    "table add": {
+        "prefix": ["table add"],
+        "body": ["table add [-subtable <name>] [--]<key> <value> [<timeout>]"],
+        "description": "Creates a new entry in the table. If such an entry already exists, returns error."
+    },
+    "table append": {
+        "prefix": ["table append"],
+        "body": ["table append [-notouch] [-subtable <name>] [-mustexist][--]<key> < append value> [<timeout>]"],
+        "description": "Appends a new string to the value already present in the table. If entry does not exist in the table, it creates new entry with value set to the appended string (original value is empty string)."
+    },
+    "table count": {
+        "prefix": ["table count"],
+        "body": ["table count [-subtable <name>]"],
+        "description": "Retrieves the number of entries in the table or a specified subtable."
+    },
+    "table delete": {
+        "prefix": ["table delete"],
+        "body": ["table delete [-subtable <name>] [--] <key>"],
+        "description": "Deletes the specified entry in the table or subtable"
+    },
+    "table increment": {
+        "prefix": ["table increment"],
+        "body": ["table increment [-notouch] [-subtable <name>] [-mustexist] [--] <key> <increment> [<timeout>]"],
+        "description": "Add specified increment to the value of the entry. If entry does not exist in the table, it creates new entry with value set to the increment value (original value is 0). Default increment is 1."
+    },
+    "table keys": {
+        "prefix": ["table keys"],
+        "body": ["table keys [-subtable <name>] [-notouch | -count]"],
+        "description": "Retrieves the list or number of keys in the specified subtable."
+    },
+    "table lookup": {
+        "prefix": ["table lookup"],
+        "body": ["table lookup [-notouch] [-subtable <name>] [--]<key>"],
+        "description": "Performs lookup on the table or subtable for the specified key and returns its value."
+    },
+    "table replace": {
+        "prefix": ["table replace"],
+        "body": ["table replace [-notouch] [-subtable <name>] [--] <key> <value> [<timeout>]"],
+        "description": "Replaces the value of the specified entry, if it exists."
+    },
+    "table set": {
+        "prefix": ["table set"],
+        "body": ["table set [-notouch] [-subtable <name>] [-mustexist|-excl] [--]<key> <value> [<timeout>]"],
+        "description": "Creates or updates specified entry."
+    },
+    "table timeout": {
+        "prefix": ["table timeout"],
+        "body": ["table timeout [-notouch] [-subtable <name>] [--] <key> <timeout>"],
+        "description": "Sets timeout of specified entry."
+    },
+    "HTTP::cookie count": {
+        "prefix": ["HTTP::cookie count"],
+        "body": ["HTTP::cookie count"],
+        "description": "Retrieves the number of cookies present in the message HTTP headers."
+    },
+    "HTTP::cookie names": {
+        "prefix": ["HTTP::cookie names"],
+        "body": ["HTTP::cookie names"],
+        "description": "Retrieves the names of all the cookies present in the message HTTP headers, in TCL list format."
+    },
+    "HTTP::cookie value": {
+        "prefix": ["HTTP::cookie value"],
+        "body": ["HTTP::cookie value <name> [<value>]"],
+        "description": "Retrieves or changes specified cookie value."
+    },
+    "HTTP::cookie domain": {
+        "prefix": ["HTTP::cookie domain"],
+        "body": ["HTTP::cookie domain <name> [<domain>]"],
+        "description": "Retrieves or changes specified cookie domain."
+    },
+    "HTTP::cookie path": {
+        "prefix": ["HTTP::cookie path"],
+        "body": ["HTTP::cookie path <name> [<path>]"],
+        "description": "Retrieves or changes specified cookie path."
+    },
+    "HTTP::cookie version": {
+        "prefix": ["HTTP::cookie version"],
+        "body": ["HTTP::cookie version <name> [0 | 1 | 2]"],
+        "description": "Retrieves or changes specified cookie version."
+    },
+    "HTTP::cookie ports": {
+        "prefix": ["HTTP::cookie ports"],
+        "body": ["HTTP::cookie ports <name> [<port-list>]"],
+        "description": "Retrieves or changes specified cookie port list for version 2 cookies."
+    },
+    "HTTP::cookie expires": {
+        "prefix": ["HTTP::cookie expires"],
+        "body": ["HTTP::cookie expires <name> [<expires>] [absolute | relative]"],
+        "description": "Retrieves or changes specified cookie expires attribute. The expiration time provided must be in number of seconds relative to the current time (relative option) or relative to POSIX time (absolute option). This command is only relevant forversion 0 cookies in HTTP responses."
+    },
+    "HTTP::cookie maxage": {
+        "prefix": ["HTTP::cookie maxage"],
+        "body": ["HTTP::cookie maxage <name> [<max-age>]"],
+        "description": "Retrieves or changes specified cookie max-age attribute. This command is only relevant forversion 1 & 2 cookies in HTTP responses."
+    },
+    "HTTP::cookie comment": {
+        "prefix": ["HTTP::cookie comment"],
+        "body": ["HTTP::cookie comment <name> [<comment>]"],
+        "description": "Retrieves or changes specified cookie comment attribute. This command is only relevant forversion 1 & 2 cookies in HTTP responses."
+    },
+    "HTTP::cookie commenturl": {
+        "prefix": ["HTTP::cookie commenturl"],
+        "body": ["HTTP::cookie commenturl <name> [<comment URL>]"],
+        "description": "Retrieves or changes specified cookiecomment URL attribute. This command is only relevant forversion 1 & 2 cookies in HTTP responses."
+    },
+    "HTTP::cookie secure": {
+        "prefix": ["HTTP::cookie secure"],
+        "body": ["HTTP::cookie secure <name> [enable | disable]"],
+        "description": "Retrieves or changes specified cookie secure attribute. This command is only relevant forHTTP responses."
+    },
+    "HTTP::cookie httponly": {
+        "prefix": ["HTTP::cookie httponly"],
+        "body": ["HTTP::cookie httponly <name> [enable | disable]"],
+        "description": "Retrieves or changes specified cookie httponly attribute. This command is only relevant forversion 1 & 2 cookies in HTTP responses."
+    },
+    "HTTP::cookie exists": {
+        "prefix": ["HTTP::cookie exists"],
+        "body": ["HTTP::cookie exists <name>"],
+        "description": "Checks whether the specified cookie exists in the message headers."
+    },
+    "HTTP::cookie insert": {
+        "prefix": ["HTTP::cookie insert"],
+        "body": ["HTTP::cookie insertname <name> value <value>[path <path>] [domain <domain>] [version <0| 1 | 2>] [expires <expires>][secure <enable | disable>] Also support short format HTTP::cookie insert<name> <value>for simple cookie insert."],
+        "description": "Inserts a Cookie header (in HTTP request) or Set-Cookie header (in HTTP response). If such headers already exist adds the new cookie to the header. When expires parameter is provided if the cookie version is 0an Expires header is inserted; if the cookie version is 1 or 2, Max-Age header is inserted."
+    },
+    "HTTP::cookie remove": {
+        "prefix": ["HTTP::cookie remove"],
+        "body": ["HTTP::cookie remove [-all] <name>"],
+        "description": "Removes specified cookie."
+    },
+    "HTTP::cookie set": {
+        "prefix": ["HTTP::cookie set"],
+        "body": ["HTTP::cookieset<name> [value <value>][path <path>] [domain <domain>] [version <0| 1 | 2>] [expires <expires>][secure <enable | disable>] [ports <port-list>] [httponly <enable | disable>] [comment <comment>] [commenturl <commenturl>]"],
+        "description": "Changes cookie attributes - recommended when multiple attributes must be changed. Note that certain attributes are only valid in HTTP responses (expires/maxage, secure, httponly, comment and commenturl) and certain attributes are only valid for specific cookie versions (maxage, secure, httponly, comment and commenturl for version 1 & 2, expires for version 0 and ports for version 2). When expires parameter is provided if the cookie version is 0an Expires header is changed; if the cookie version is 1 or 2, Max-Age header is changed."
+    },
+    "HTTP::crule enable": {
+        "prefix": ["HTTP::crule enable"],
+        "body": ["HTTP::crule enable"],
+        "description": "Enables content-based switching until end of this TCP connection or until it is disabled."
+    },
+    "HTTP::crule disable": {
+        "prefix": ["HTTP::crule disable"],
+        "body": ["HTTP::crule disable"],
+        "description": "Disables content-based switching until end of this TCP connection or until it is enabled. For this time period the server is selected from the server group of the respective virtual service."
+    },
+    "HTTP::crule select": {
+        "prefix": ["HTTP::crule select"],
+        "body": ["HTTP::crule select <rule ID>"],
+        "description": "Select specified content-based rule."
+    },
+    "HTTP::header count": {
+        "prefix": ["HTTP::header count"],
+        "body": ["HTTP::header count [<name>]"],
+        "description": "Retrieves the number of headers present in the HTTP message, or optionally the number of occurences of a certain header. Note that multiple occurrences of the same header name are counted separately."
+    },
+    "HTTP::header names": {
+        "prefix": ["HTTP::header names"],
+        "body": ["HTTP::header names"],
+        "description": "Retrieves the names of all the headers present in the HTTPmessage, in TCL list format. Note that multiple occurrences of the same header name appear multiple times."
+    },
+    "HTTP::header value": {
+        "prefix": ["HTTP::header value"],
+        "body": ["HTTP::header value <name>"],
+        "description": "Retrieves specified header value. Note that if the same header name appears multiple times in the message only the value of the last occurrence will be retrieved."
+    },
+    "HTTP::header values": {
+        "prefix": ["HTTP::header values"],
+        "body": ["HTTP::header values <name>"],
+        "description": "Retrieves the values of all occurrences of the specified header."
+    },
+    "HTTP::header exists": {
+        "prefix": ["HTTP::header exists"],
+        "body": ["HTTP::header exists <name>"],
+        "description": "Checks whether the specified header exists in the message."
+    },
+    "HTTP::header at": {
+        "prefix": ["HTTP::header at"],
+        "body": ["HTTP::header at <index>"],
+        "description": "Retrieves the name of i-th header in the message."
+    },
+    "HTTP::header insert": {
+        "prefix": ["HTTP::header insert"],
+        "body": ["HTTP::header insert[<name> <value>]+"],
+        "description": "Inserts header or headers in the HTTP message.The headers are inserted at the end of the HTTP headers area in the message."
+    },
+    "HTTP::header replace": {
+        "prefix": ["HTTP::header replace"],
+        "body": ["HTTP::header replace <name> <value>"],
+        "description": "Replaces the value of the last occurrence of the specified header, if it exists, if not inserts such a header."
+    },
+    "HTTP::header remove": {
+        "prefix": ["HTTP::header remove"],
+        "body": ["HTTP::header remove <name>"],
+        "description": "Removes the specified header. If the header appears multiple times, only the last occurrence will be removed"
+    },
+    "HTTP::header is_redirect": {
+        "prefix": ["HTTP::header is_redirect"],
+        "body": ["HTTP::header is_redirect"],
+        "description": "Checks whether the status code of response is redirect code (301, 302, 303, 305 or 307)"
+    },
+    "HTTP::header is_keepalive": {
+        "prefix": ["HTTP::header is_keepalive"],
+        "body": ["HTTP::header is_keepalive"],
+        "description": "Checks whether keep-alive is enabled in current connection"
+    },
+    "HTTP::payload length": {
+        "prefix": ["HTTP::payload length"],
+        "body": ["HTTP::payload length"],
+        "description": "Retrieves length of collected payload, in bytes."
+    },
+    "HTTP::payload find": {
+        "prefix": ["HTTP::payload find"],
+        "body": ["HTTP::payload find [-nocase] <string> [<start_from_offset>]"],
+        "description": "Searches for the first occurence of a string in the collected payload and if found, returnsits byte length offset within the payload. The search can start from the beginning of the payload or from a specified offset and the match can be case sensitive or case insensitive. If no occurence is found, -1 is returned."
+    },
+    "HTTP::payload find_all": {
+        "prefix": ["HTTP::payload find_all"],
+        "body": ["HTTP::payload find_all [-nocase] <string> [<start_from_offset>]"],
+        "description": "Searches for all non-overlapping occurences of a string in the collected payload. Returns a list of byte length offsets. The search can start from the beginning of the payload or from a specified offset and the match can be case sensitive or case insensitive. If no occurence is found,empty listis returned."
+    },
+    "HTTP::payload replace": {
+        "prefix": ["HTTP::payload replace"],
+        "body": ["HTTP::payload replace [-force] <offset> <length> <new_string>"],
+        "description": "Replaces all or part of the payload. You can specify where the replacement should start (offset), how much should be replaced (length), and what the replacement should be."
+    },
+    "HTTP::payload clear": {
+        "prefix": ["HTTP::payload clear"],
+        "body": ["HTTP::payload clear"],
+        "description": "Replaces the currently collected payload with zero length string."
+    },
+    "HTTP::payload rechunk": {
+        "prefix": ["HTTP::payload rechunk"],
+        "body": ["HTTP::payload rechunk"],
+        "description": "Chunks the payload before forwarding it to destination"
+    },
+    "HTTP::payload unchunk": {
+        "prefix": ["HTTP::payload unchunk"],
+        "body": ["HTTP::payload unchunk"],
+        "description": "Converts payloadtransfermethod to Content-Length, if possible."
+    },
+    "IP::addr parse": {
+        "prefix": ["IP::addr parse"],
+        "body": ["IP::addr parse [-ipv4 [-swap] | -ipv6] <bytearray> [<offset>]"],
+        "description": "Parses binary format IP address into a string format"
+    },
+    "IP::tos get": {
+        "prefix": ["IP::tos get"],
+        "body": ["IP::tos get"],
+        "description": "Retrieves the value of the TOS/DSCP value.For TCP, value is readfrom TCP handshake.for UDP, value is readfrom each individual packet."
+    },
+    "IP::tos set": {
+        "prefix": ["IP::tos set"],
+        "body": ["IP::tos set <value>"],
+        "description": "Changes the TOS/DSCP value for server connections"
+    },
+    "RADIUS::auth recalc": {
+        "prefix": ["RADIUS::auth recalc"],
+        "body": ["RADIUS::auth recalc <secret_key> [<req_auth>]"],
+        "description": "Recalculates the authenticator field."
+    },
+    "RADIUS::avp delete": {
+        "prefix": ["RADIUS::avp delete"],
+        "body": ["RADIUS::avp delete <attr> [index <i>] [vendor-id <ID> vendor-type <type>]"],
+        "description": "Removes the specified attribute from the RADIUS message."
+    },
+    "RADIUS::avp insert": {
+        "prefix": ["RADIUS::avp insert"],
+        "body": ["RADIUS::avp insert <attr> <value> [<attr_type>] [vendor-id <ID> vendor-type <type>]"],
+        "description": "Inserts specified attribute and value to the RADIUS message. The new attribute is inserted as the first AVP of the packet."
+    },
+    "RADIUS::avp replace": {
+        "prefix": ["RADIUS::avp replace"],
+        "body": ["RADIUS::avp replace <attr> <value> [<attr_type>] [index <i>] [vendor-id <ID> vendor-type <type>]"],
+        "description": "Replaces the value of the specified attribute, if it exists."
+    },
+    "RADIUS::avp clear_all": {
+        "prefix": ["RADIUS::avp clear_all"],
+        "body": ["RADIUS::avp clear_all"],
+        "description": "Removes all the AVPsfrom the packet."
+    },
+    "SIP::header insert": {
+        "prefix": ["SIP::header insert"],
+        "body": ["SIP::header insert <name> <value>"],
+        "description": "Inserts header in the SIP message.If such a header already exists, the new header will be inserted before the first existing occurrence. If no such header exists, Via header is inserted in the beginning of the SIP headers areaand all the rest are inserted at the end of the SIP headers area in the message."
+    },
+    "SIP::header remove": {
+        "prefix": ["SIP::header remove"],
+        "body": ["SIP::header remove <name> [<index>]"],
+        "description": "Removes the specified header. If the header appears multiple times you can specify which index to remove; by default first occurrence is removed."
+    },
+    "SIP::header replace": {
+        "prefix": ["SIP::header replace"],
+        "body": ["SIP::header replace <name> <value> [<index>]"],
+        "description": "Replaces the value of the specified occurrence of a header, if it exists, if not inserts such a header."
+    },
+    "SIP::response code": {
+        "prefix": ["SIP::response code"],
+        "body": ["SIP::response code"],
+        "description": "Retrieves the SIP response status code"
+    },
+    "SIP::response phrase": {
+        "prefix": ["SIP::response phrase"],
+        "body": ["SIP::response phrase"],
+        "description": "Retrieves the SIP response reason phrase"
+    },
+    "SIP::response rewrite": {
+        "prefix": ["SIP::response rewrite"],
+        "body": ["SIP::response rewrite<status code> [<reason phrase>]"],
+        "description": "Rewrite the SIP response statuscode and/or reason phrase"
+    },
+    "SIP::via proto": {
+        "prefix": ["SIP::via proto"],
+        "body": ["SIP::via proto[<index>]"],
+        "description": "Retrieves the protocol parameter from theVia header at the specified index."
+    },
+    "SIP::via sent_by": {
+        "prefix": ["SIP::via sent_by"],
+        "body": ["SIP::via sent_by[<index>]"],
+        "description": "Retrieves the sent_by parameter from theVia header at the specified index."
+    },
+    "SIP::via received": {
+        "prefix": ["SIP::via received"],
+        "body": ["SIP::via received[<index>]"],
+        "description": "Retrieves the received parameter from theVia header at the specified index."
+    },
+    "SIP::via branch": {
+        "prefix": ["SIP::via branch"],
+        "body": ["SIP::via branch[<index>]"],
+        "description": "Retrieves the branch parameter from theVia header at the specified index."
+    },
+    "SIP::via maddr": {
+        "prefix": ["SIP::via maddr"],
+        "body": ["SIP::via maddr[<index>]"],
+        "description": "Retrieves the maddr parameter from theVia header at the specified index."
+    },
+    "SIP::via ttl": {
+        "prefix": ["SIP::via ttl"],
+        "body": ["SIP::via ttl[<index>]"],
+        "description": "Retrieves the ttl parameter from theVia header at the specified index."
+    },
+    "Special::attach group": {
+        "prefix": ["Special::attach group"],
+        "body": ["attach group <groupID>"],
+        "description": "Declares groups that need to be available for load balancing to the virtual service to which the AppShape++ script is attached.This is required only when the script performs group or server selection. All groups that are addressed in the script (group command) must be declared, so that the device can prepare appropriate server instances available for the virtual service, otherwise the group command can fail."
+    },
+    "Special::attach snat": {
+        "prefix": ["Special::attach snat"],
+        "body": ["attach snat <IP address> | nwclass <nwclass id>"],
+        "description": "Declares IP addresses or Network Class will be used to translate source IP . All IP addresses or network classes that will be used in the script to perform NAT (snat command) must be declared, so that device is able to answer ARP for these IP addresses and ensure responses to these IP addresses reach Alteon."
+    },
+    "SSL::cert issuer": {
+        "prefix": ["SSL::cert issuer"],
+        "body": ["SSL::cert issuer <index>"],
+        "description": "Retrieve the issuer's certificateof the specified certificate in the chain."
+    },
+    "SSL::cert count": {
+        "prefix": ["SSL::cert count"],
+        "body": ["SSL::cert count"],
+        "description": "Retrieve the number of certificates in the chain"
+    },
+    "SSL::cipher name": {
+        "prefix": ["SSL::cipher name"],
+        "body": ["SSL::cipher name"],
+        "description": "Retrieve the name of the SSL cipher in use, in Open SSL format"
+    },
+    "SSL::cipher version": {
+        "prefix": ["SSL::cipher version"],
+        "body": ["SSL::cipher version"],
+        "description": "Retrieve the version of the SSL cipher in use."
+    },
+    "SSL::cipher bits": {
+        "prefix": ["SSL::cipher bits"],
+        "body": ["SSL::cipher bits"],
+        "description": "Retrieve the number of bits of the SSL cipher used."
+    },
+    "TCP::close none": {
+        "prefix": ["TCP::close none"],
+        "body": ["TCP::close [reset | silent] [-twoway]"],
+        "description": "Terminates the TCP connection to client and server(FIN)."
+    },
+    "TCP::close reset": {
+        "prefix": ["TCP::close reset"],
+        "description": "Resets the TCP connection. When called in CLIENT_CLOSED or SERVER_CLOSED events this command only resets that context connection (either client or server connection). When this command is called in any other supported event it sends RST to both client and server."
+    },
+    "TCP::close silent": {
+        "prefix": ["TCP::close silent"],
+        "description": "Closes the TCP connection silent. When called this command onlycloses that context connection (either client or server connection).."
+    },
+    "TCP::close twoway": {
+        "prefix": ["TCP::close twoway"],
+        "description": "Terminated the TCP connectiontogether with the TCP connectionon the opposite site. When called from server side events will also close the frontend connection to the client. Usefull in splitting mode where the frontend connection is separated from the backend connection(s)"
+    },
+    "TCP::option get": {
+        "prefix": ["TCP::option get"],
+        "body": ["TCP::option get <option>"],
+        "description": "Retrieves the raw value of the specified TCP option"
+    },
+    "TCP::option set": {
+        "prefix": ["TCP::option set"],
+        "body": ["TCP::option set <option> <value>"],
+        "description": "Edit (set or add) specified TCP option."
+    },
+    "TCP::payload none": {
+        "prefix": ["TCP::payload none"],
+        "body": ["TCP::payload [<offset>] [<length>]"],
+        "description": "Retrieves all or specified amount of collected TCP payload"
+    },
+    "TCP::payload replace": {
+        "prefix": ["TCP::payload replace"],
+        "body": ["TCP::payload replace <offset> <length> <data>"],
+        "description": "Replaces all or part of collected TCP payload with specified data."
+    },
+    "TCP::payload length": {
+        "prefix": ["TCP::payload length"],
+        "body": ["TCP::payload length"],
+        "description": "Retrieves the length of collected TCP payload in bytes."
+    },
+    "TCP::payload find": {
+        "prefix": ["TCP::payload find"],
+        "body": ["TCP::payload find [-nocase] <string> [<start_from_offset>]"],
+        "description": "Searches for the first occurence of a string in the collected payload and if found, returnsits byte length offset within the payload. The search can start from the beginning of the payload or from a specified offset and the match can be case sensitive or case insensitive. If no occurence is found, -1 is returned."
+    },
+    "TCP::payload find_all": {
+        "prefix": ["TCP::payload find_all"],
+        "body": ["TCP::payload find_all [-nocase] <string> [<start_from_offset>]"],
+        "description": "Searches for all non-overlapping occurences of a string in the collected payload. Returns a list of byte length offsets. The search can start from the beginning of the payload or from a specified offset and the match can be case sensitive or case insensitive. If no occurence is found,empty listis returned."
+    },
+    "TCP::payload clear": {
+        "prefix": ["TCP::payload clear"],
+        "body": ["TCP::payload clear"],
+        "description": "Clears the current payload.This is a shortcut for TCP::payload 0 [TCP::payload length] \"\""
+    },
+    "UDP::payload none": {
+        "prefix": ["UDP::payload none"],
+        "body": ["UDP::payload [<offset>] [<length>]"],
+        "description": "Retrieves all or specified amount of current UDP segment payload"
+    },
+    "UDP::payload replace": {
+        "prefix": ["UDP::payload replace"],
+        "body": ["UDP::payload replace <offset> <length> <data>"],
+        "description": "Replaces all or part of current UDP segment payload with specified data. When length is 0, the specified data is inserted in the UDP payload."
+    },
+    "UDP::payload length": {
+        "prefix": ["UDP::payload length"],
+        "body": ["UDP::payload length"],
+        "description": "Retrieves the length of collected UDP payload in bytes."
+    },
+    "UDP::payload find": {
+        "prefix": ["UDP::payload find"],
+        "body": ["UDP::payload find [-nocase] <string> [<start_from_offset>]"],
+        "description": "Searches for the first occurence of a string in the collected payload and if found, returnsits byte length offset within the payload. The search can start from the beginning of the payload or from a specified offset and the match can be case sensitive or case insensitive. If no occurence is found, -1 is returned."
+    },
+    "UDP::payload find_all": {
+        "prefix": ["UDP::payload find_all"],
+        "body": ["UDP::payload find_all [-nocase] <string> [<start_from_offset>]"],
+        "description": "Searches for all non-overlapping occurences of a string in the collected payload. Returns a list of byte length offsets. The search can start from the beginning of the payload or from a specified offset and the match can be case sensitive or case insensitive. If no occurence is found,empty listis returned."
+    },
+    "UDP::payload clear": {
+        "prefix": ["UDP::payload clear"],
+        "body": ["UDP::payload clear"],
+        "description": "Clears the current payload.This is a shortcut for UDP::payload 0 [UDP::payload length] \"\""
+    }
+}
